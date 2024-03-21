@@ -23,6 +23,7 @@ function FrameworkSelect() {
 
     const {data: userData} = useSWR(url, fetcher, {suspense:true});
 
+    
     console.log('data::',userData);
     // const userData: UserType[] = [
     //     {
