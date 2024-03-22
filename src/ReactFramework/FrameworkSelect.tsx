@@ -1,15 +1,7 @@
 import { useMemo, useState } from 'react';
-import Select from '../element/Select';
-import InputButton from "../element/InputButton";
 import useSWR from 'swr';
-import { useQuery } from 'react-query';
-import axios from 'axios';
-import { UserType } from '../element/selectPropsType/SelectPropsType';
-import { sleep } from 'react-query/types/core/utils';
-// import axios from 'axios';
 
 function FrameworkSelect() {
-    console.log("frameworkSelect");
     // 선택된 element
     var [selectedValue, setSelectedValue] = useState("");
     var [userState, setUserState] = useState([]);
